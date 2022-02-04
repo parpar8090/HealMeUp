@@ -1,0 +1,10 @@
+#heal-rate is the amount of hp (heart points, 1hp = 0.5 heart) that the player will regenerate in a second.
+#combat-timeout is the interval (in seconds) that it takes until player starts healing after a fight.
+#if combat-pvp-only is set to true, it will only heal the player if the player was fighting another player.
+#when replace-vanilla-healing is set to true, it will completely replace the vanilla healing system.
+#when stop-healing-when-full is set to true, players who are out of fight will stop healing once their health is full.
+heal-rate: 2
+combat-timeout: 10
+combat-pvp-only: false
+replace-vanilla-healing: true
+stop-healing-once-full: true

@@ -1,0 +1,6 @@
+name: HealMeUp
+version: '${project.version}'
+main: com.parpar8090.healmeup.HealMeUp
+api-version: 1.16
+authors: [ parpar8090 ]
+description: Heals players when out of fight
