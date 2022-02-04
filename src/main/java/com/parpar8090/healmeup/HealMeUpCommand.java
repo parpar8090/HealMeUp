@@ -58,7 +58,7 @@ public class HealMeUpCommand extends Command {
                         break;
                     }
                     case "replace-vailla-healing": {
-                        HealMeUp.getInstance().getSettings().setAndSaveSetting("replace-vailla-healing", parseBoolean(args[2]));
+                        HealMeUp.getInstance().getSettings().setAndSaveSetting("replace-vanilla-healing", parseBoolean(args[2]));
                         Common.tellSuccess(sender, "Set and saved replace-vailla-healing to "+args[2]);
                         break;
                     }
