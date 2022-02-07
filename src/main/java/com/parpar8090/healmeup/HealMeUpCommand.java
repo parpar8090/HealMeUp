@@ -57,7 +57,7 @@ public class HealMeUpCommand extends Command {
                         Common.tellSuccess(sender, "Set and saved combat-pvp-only to "+args[2]);
                         break;
                     }
-                    case "replace-vailla-healing": {
+                    case "replace-vanilla-healing": {
                         HealMeUp.getInstance().getSettings().setAndSaveSetting("replace-vanilla-healing", parseBoolean(args[2]));
                         Common.tellSuccess(sender, "Set and saved replace-vailla-healing to "+args[2]);
                         break;
