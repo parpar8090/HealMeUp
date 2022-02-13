@@ -94,9 +94,9 @@ public class HealMeUpCommand extends Command {
 
     private void sendHelpMessage(CommandSender sender, String label){
         List<String> lines = new ArrayList<>();
-        lines.add("Sub-commands:");
-        lines.add(" /"+label+" reload - reloads settings file");
-        lines.add(" /"+label+" set <heal-rate|combat-timeout|combat-pvp-only|replace-vailla-healing|stop-healing-once-full> - modifies plugin settings");
+        lines.add("&aSub-commands:");
+        lines.add("&7 /"+label+" &areload&7 - reloads settings file");
+        lines.add("&7 /"+label+" &aset&7 <heal-rate|combat-timeout|combat-pvp-only|replace-vailla-healing|stop-healing-once-full> - modifies plugin settings");
         Common.tell(sender, lines);
     }
 
