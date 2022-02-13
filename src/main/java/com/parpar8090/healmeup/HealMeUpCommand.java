@@ -59,7 +59,7 @@ public class HealMeUpCommand extends Command {
                     }
                     case "replace-vanilla-healing": {
                         HealMeUp.getInstance().getSettings().setAndSaveSetting("replace-vanilla-healing", parseBoolean(args[2]));
-                        Common.tellSuccess(sender, "Set and saved replace-vailla-healing to "+args[2]);
+                        Common.tellSuccess(sender, "Set and saved replace-vanilla-healing to "+args[2]);
                         break;
                     }
                     case "stop-healing-once-full": {
@@ -96,7 +96,7 @@ public class HealMeUpCommand extends Command {
         List<String> lines = new ArrayList<>();
         lines.add("&aSub-commands:");
         lines.add("&7 /"+label+" &areload&7 - reloads settings file");
-        lines.add("&7 /"+label+" &aset&7 <heal-rate|combat-timeout|combat-pvp-only|replace-vailla-healing|stop-healing-once-full> - modifies plugin settings");
+        lines.add("&7 /"+label+" &aset&7 <heal-rate|combat-timeout|combat-pvp-only|replace-vanilla-healing|stop-healing-once-full> - modifies plugin settings");
         Common.tell(sender, lines);
     }
 
@@ -110,7 +110,7 @@ public class HealMeUpCommand extends Command {
             return List.of("set", "reload");
         }
         if(args.length == 2 && args[0].equalsIgnoreCase("set")){
-            return List.of("heal-rate", "combat-timeout", "combat-pvp-only", "replace-vailla-healing", "stop-healing-once-full");
+            return List.of("heal-rate", "combat-timeout", "combat-pvp-only", "replace-vanilla-healing", "stop-healing-once-full");
         }
         return new ArrayList<>();
     }
