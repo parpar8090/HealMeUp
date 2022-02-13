@@ -43,7 +43,7 @@ public class CombatLog {
                 timeLeft = 0;
                 startHealing();
             }
-        },20, 20);
+        },0, 20);
     }
 
     public void startHealing(){
@@ -54,15 +54,14 @@ public class CombatLog {
 
             double maxHealth = player.getAttribute(Attribute.GENERIC_MAX_HEALTH).getValue();
 
-            if(player.getHealth() <= maxHealth) {
+            if(player.getHealth() < maxHealth) {
                 player.setHealth(Math.min(player.getHealth() + Settings.HEAL_RATE, maxHealth));
             } else {
                 if(Settings.STOP_HEALING_ONCE_FULL) {
                     cancelTask();
-                    Common.log("cancelled");
                 }
             }
-        },20, 20);
+        },0, 20);
     }
 
     public void cancelTask(){

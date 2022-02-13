@@ -31,7 +31,7 @@ public class Settings {
         COMBAT_TIMEOUT = config.getInt("combat-timeout", 10);
         COMBAT_PVP_ONLY = config.getBoolean("combat-pvp-only", false);
         REPLACE_VANILLA_HEALING = config.getBoolean("replace-vanilla-healing", true);
-        STOP_HEALING_ONCE_FULL = config.getBoolean("stop-healing-when-full", true);
+        STOP_HEALING_ONCE_FULL = config.getBoolean("stop-healing-once-full", true);
     }
 
     public void saveSettings(){
